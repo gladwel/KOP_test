@@ -1,3 +1,5 @@
+# 2023 nové
+
 Problém diskrétního rozmístění:
 
 Dáno:
@@ -169,59 +171,7 @@ reprezentaci individua - Špatně, Zdatnost v Fast Messy GA je určena výpočte
 fenotypu individua - Špatně, V Fast Messy GA je důraz kladen na genotypovou reprezentaci a její interakce, ne přímo na fenotyp.
 
 ---
-
-Ranking v genetickém algoritmu
-
-`💛 hint`
-
-nastavuje velikost turnaje
-
-ovlivní pravděpodobnost výběru nejzdatnějšího jedince
-
-v dané generaci, může způsobit zmenšení selekčního tlaku
-
-v dané generaci, může způsobit zvětšení selekčního tlaku
-
-`answer`
-
-`✅ correct`
-
-ovlivní pravděpodobnost výběru nejzdatnějšího jedince - Správně, Ranking jedinců podle zdatnosti určuje, kdo má větší šanci být vybrán pro reprodukci.
-
-v dané generaci, může způsobit zmenšení selekčního tlaku - Správně, Pokud je ranking použit k vyrovnání šancí, může to snížit selekční tlak tím, že dává šanci i méně zdatným jedincům.
-
-v dané generaci, může způsobit zvětšení selekčního tlaku - Správně, Naopak, přiřazením vyšší pravděpodobnosti výběru zdatnějším jedincům se může selekční tlak zvýšit.
-
-`❌ wrong`
-
-nastavuje velikost turnaje - Špatně, Ranking sám o sobě neurčuje velikost turnaje, ale může ovlivnit selekci jedinců na základě jejich zdatnosti.
-
----
-
-Genetický algoritmus je aplikován v situaci, kdy některé části stavového prostoru mají výrazně větší hloubku než jiné. Využijeme
-
-`💛 hint`
-
-konstantní poměrně vysokou míru mutace, aby se populace snáze dostala do “vlídnějších kočin”
-
-některých vlastností lineárního škálování
-
-některé metody automatického řízení selekčního tlaku
-
-`answer`
-
-`✅ correct`
-
-některých vlastností lineárního škálování - Správně, Lineární škálování může pomoci přizpůsobit selekční tlak a zlepšit průzkum prostoru tím, že se přizpůsobuje různým hloubkám stavového prostoru.
-
-některé metody automatického řízení selekčního tlaku - Správně, Metody automatického řízení selekčního tlaku umožňují dynamicky upravovat intenzitu selekce v průběhu evoluce populace. Tím se zlepšuje schopnost algoritmu adaptovat se.
-
-`❌ wrong`
-
-konstantní poměrně vysokou míru mutace, aby se populace snáze dostala do “vlídnějších kočin” - Špatně, Vysoká míra mutace může vést k náhodnému prohledávání a ztrátě dobrých řešení, spíše než cílenému průzkumu prostoru.
-
----
-
+# Bayesovská optimalizace
 Základní jednotkou reprezentace, se kterou pracuje bayesovská optimalizace je
 
 `💛 hint`
@@ -337,6 +287,8 @@ křížením z předchozí generace - Špatně, Bayesovská optimalizace nevyuž
 stochastickým výběrem - Špatně, Modelování v bayesovské optimalizaci se opírá o statistické metody a analýzu dat, ne o náhodný výběr.
 
 ---
+
+# Dynamické programování
 
 Dynamické programování může
 
@@ -798,6 +750,8 @@ polynomiální - Špatně, Vzhledem k exponenciálnímu počtu podmnožin uzlů 
 
 ---
 
+# Simulovaná evoluce
+
 Evoluční programování pracuje nad
 
 `💛 hint`
@@ -881,6 +835,8 @@ uvažované jednobodové křížení má za následek závislost přežívání 
 složitější schémata (vyššího řádu) přežívají lépe - Špatně, Teorie stavebních bloků naznačuje, že krátká, nízkořádová, vysoce fit schémata mají lepší šance na přežití.
 
 ---
+
+# Genetický algoritmus
 
 V genetickém algoritmu je třeba zpomalit konvergenci. Možností je upravit pravděpodobnost mutace a nebo upravit selekční tlak. Platí
 
@@ -1366,6 +1322,61 @@ při použití, jeho proměnné nahrazují proměnné fragmentů genetické info
 
 ---
 
+Ranking v genetickém algoritmu
+
+`💛 hint`
+
+nastavuje velikost turnaje
+
+ovlivní pravděpodobnost výběru nejzdatnějšího jedince
+
+v dané generaci, může způsobit zmenšení selekčního tlaku
+
+v dané generaci, může způsobit zvětšení selekčního tlaku
+
+`answer`
+
+`✅ correct`
+
+ovlivní pravděpodobnost výběru nejzdatnějšího jedince - Správně, Ranking jedinců podle zdatnosti určuje, kdo má větší šanci být vybrán pro reprodukci.
+
+v dané generaci, může způsobit zmenšení selekčního tlaku - Správně, Pokud je ranking použit k vyrovnání šancí, může to snížit selekční tlak tím, že dává šanci i méně zdatným jedincům.
+
+v dané generaci, může způsobit zvětšení selekčního tlaku - Správně, Naopak, přiřazením vyšší pravděpodobnosti výběru zdatnějším jedincům se může selekční tlak zvýšit.
+
+`❌ wrong`
+
+nastavuje velikost turnaje - Špatně, Ranking sám o sobě neurčuje velikost turnaje, ale může ovlivnit selekci jedinců na základě jejich zdatnosti.
+
+---
+
+Genetický algoritmus je aplikován v situaci, kdy některé části stavového prostoru mají výrazně větší hloubku než jiné. Využijeme
+
+`💛 hint`
+
+konstantní poměrně vysokou míru mutace, aby se populace snáze dostala do “vlídnějších kočin”
+
+některých vlastností lineárního škálování
+
+některé metody automatického řízení selekčního tlaku
+
+`answer`
+
+`✅ correct`
+
+některých vlastností lineárního škálování - Správně, Lineární škálování může pomoci přizpůsobit selekční tlak a zlepšit průzkum prostoru tím, že se přizpůsobuje různým hloubkám stavového prostoru.
+
+některé metody automatického řízení selekčního tlaku - Správně, Metody automatického řízení selekčního tlaku umožňují dynamicky upravovat intenzitu selekce v průběhu evoluce populace. Tím se zlepšuje schopnost algoritmu adaptovat se.
+
+`❌ wrong`
+
+konstantní poměrně vysokou míru mutace, aby se populace snáze dostala do “vlídnějších kočin” - Špatně, Vysoká míra mutace může vést k náhodnému prohledávání a ztrátě dobrých řešení, spíše než cílenému průzkumu prostoru.
+
+---
+
+
+# Relaxace 
+
 Relaxace v iterativních lokálních heuristikách
 
 `💛 hint`
@@ -1459,6 +1470,8 @@ Přiřazuje všem konfiguracím, které nejsou řešením, hodnotu konstantní p
 Slouží pouze při porovnání konfigurací pro přijetí tahu - Špatně, Relaxace má širší aplikaci než pouze v přijímání tahů.
 
 ---
+
+# Simulované ochlazování
 
 Máte experimentálně vyhodnotit, zda chování algoritmu, který automaticky nastavuje počáteční teplotu simulovaného ochlazování, odpovídá teorii, kterou jste vymysleli, a která zahrnuje několik parametrů instance. Zajímá vás také, zda tyto parametry stačí k charakterizaci instance z hlediska práce algoritmu
 
@@ -1651,6 +1664,8 @@ Použijete vygenerované instance stejné velikosti. - Špatně, Pro komplexní 
 Použijete praktické instance stejné velikosti. - Špatně, Stejný důvod jako výše.
 
 ---
+
+# Randomizovaný/deterministický algoritmus
 
 Potřebujete plánovací algoritmus, který chcete nasadit do aplikace řízení údržby. Omezení času výpočtu existuje, ale není podstatné (počítá se přes noc na příští den). Důležitá je kvalita (naježděné kilometry). Máte dva kandidáty, A a B, oba randomizované algoritmy. Potřebujete je experimentálně srovnat
 
@@ -1932,6 +1947,8 @@ Je to důkaz, že kvalita na parametru nezávisí. - Špatně, Chaotické výsle
 
 ---
 
+# Globální metoda
+
 Globální metoda je aplikována na grafový problém. Instance je graf, velikost instance n se měří počtem uzlů grafu. Dekompozice produkuje v čase O(n) dvě podinstance, které obsahují vždy poloviční počet uzlů (nevíme které uzly) a hrany mezi nimi. Kompozice a řešení triviálních instancí je v konstantním čase. Algoritmus
 
 `💛 hint`
@@ -2027,6 +2044,8 @@ algoritmus je pseudopolynomiální - Špatně, Bez konkrétnějších informací
 při řešení dynamickým programováním je pseudopolynomiální - Špatně, Dynamické programování by mohlo zefektivnit výpočet, ale informace poskytnuté nedovolují jednoznačně určit pseudopolynomiální charakter.
 
 ---
+
+# Ostatní otázky (neoznačená změť, ovšem bez duplicit)
 
 Jak se pozná, že heuristika neskončí v lokálním minimu?
 
@@ -3583,6 +3602,8 @@ změnu průměrné zdatnosti mezi generacemi - Správně, Sledování změny pr�
 poměry zdatnosti - Špatně, Konkrétní poměry zdatnosti nejsou přímo spojeny s upravováním selekčního tlaku.
 
 ---
+
+# FIKI – zkouškové otázky 2013-2015
 
 Základní jednotkou reprezentace, se kterou pracuje stochastická optimalizace, je
 
