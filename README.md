@@ -25,6 +25,7 @@ proměnných. Nasazovaná heuristika pracuje s prohledávacím prostorem. Jeden 
 možnost odvolat ani změnit rozhodnuté ohodnocení konfigurační proměnné
 
 </strong>
+
 `💛 hint`
 
 Prohledávací prostor je vždy orientovaným stromem
@@ -70,6 +71,7 @@ prosté přiřazení R:K → P (rozmístění), které minimalizuje součet ohod
 Nasazovaný algoritmus je iterativní. Pokud pro přiřazení p neexistuje modul k, který by tam byl rozmístěn, chápe se to jako prázdný modul na pozici p.
 
 </strong>
+
 `💛 hint`
 
 Jestliže jediný operátor je párová změna na modulech, tj. moduly k_a a k_b, 1≤a, b≤n, i ≠ j si vymění pozice, pak stavový prostor není souvislý
@@ -95,6 +97,7 @@ Formulace rozhodovacího problému minimálního obdélníkového pokrytí:
 Heuristika řešící tento problém používá jako stav seznam obdélníků, pokrývajících daný prvek matice (ano, jistěže to jde lépe). Operátorem rozumíme odebrání/přidání konkrétního prvku matice do konkrétního obdélníku (operátor nemá parametry). Za těchto okolností
 
 </strong>
+
 `💛 hint`
 
 Asymptotická horní mez velikosti stavového prostoru roste exponenciálně s K
@@ -124,6 +127,7 @@ Pro každý prvek matice, operátory generují okolí velikosti m - Špatně, Ok
 Iterativní heuristika řeší problém obchodního cestujícího v rovině. Operátorem je dvojzáměna na úsecích túry (dva úseky jsou nahrazeny jinými dvěma úseky). Momentálně řešená instance má 5 měst.
 
 </strong>
+
 `💛 hint`
 
 Stavový prostor má silně souvislý graf
@@ -153,6 +157,7 @@ Okolí každého stavu má velikost 10 - Špatně, Velikost okolí v iterativní
 Vyhodnocení zdatnosti ve Fast Messy GA algoritmu je založeno na
 
 </strong>
+
 `💛 hint`
 
 reprezentaci individua
@@ -186,6 +191,7 @@ fenotypu individua - Špatně, V Fast Messy GA je důraz kladen na genotypovou r
 Základní jednotkou reprezentace, se kterou pracuje bayesovská optimalizace je
 
 </strong>
+
 `💛 hint`
 
 dvojice [identifikace proměnné, hodnota]
@@ -219,6 +225,7 @@ vektor hodnot (odpověď ze starého testu) - Špatně, Vektor hodnot může bý
 Nová generace v bayesovské optimalizaci vzniká
 
 </strong>
+
 `💛 hint`
 
 křížením
@@ -248,6 +255,7 @@ ruletovým výběrem - Špatně, Ruletový výběr je selekční metoda v geneti
 Stochastický model v bayesovská optimalizaci vzniká
 
 </strong>
+
 `💛 hint`
 
 tak, aby vystihoval žádané vlastnosti řešení
@@ -277,6 +285,7 @@ stochastickým výběrem - Špatně, Stochastický model je vytvářen na zákla
 Stochastický model v bayesovská optimalizaci vzniká
 
 </strong>
+
 `💛 hint`
 
 podle vlastností aktuální generace
@@ -310,6 +319,7 @@ stochastickým výběrem - Špatně, Modelování v bayesovské optimalizaci se 
 Dynamické programování může
 
 </strong>
+
 `💛 hint`
 
 uváznout v lokálním minimu
@@ -339,6 +349,7 @@ divergovat - Špatně, Dynamické programování je deterministický algoritmick
 Dynamické programování je aplikováno na grafový problém. Používá jako klíč k výběru z paměti řešení podinstancí dvojici diskrétních proměnných (p,q), kde p je index uzlu a q index hrany. Všechny podinstance je třeba řešit. Velikost instance n se měří počtem uzlů. Dekompozice a kompozice má složitost O(n). Algoritmus
 
 </strong>
+
 `💛 hint`
 
 má složitost rostoucí nejméně se čtvrtou mocninou velikosti instance
@@ -372,6 +383,7 @@ je pseudopolynomiální - Špatně, Algoritmus je klasifikován jako pseudopolyn
 Dynamické programování je aplikováno na grafový problém. Používá jako klíč k výběru z paměti řešení podinstancí dvojici diskrétních proměnných (p,q), kde p je index uzlu a q index hrany. Velikost instance se měří počtem uzlů. Složitost kompozice a dekompozice je konstantní. Algoritmus
 
 </strong>
+
 `💛 hint`
 
 má exponenciální dolní asymptotickou mez složitosti
@@ -401,6 +413,7 @@ je pseudopolynomiální - Špatně, Pseudopolynomiální složitost závisí na 
 Dynamické programování je aplikováno na grafový problém. Velikost instance je charakterizována počtem uzlů. Podinstance je charakterizována podgrafem grafu zadaného v instanci o nejvýše n/2 uzlech, kde n je velikost instance. Kompozice a dekompozice mají lineární složitost. Algoritmus je
 
 </strong>
+
 `💛 hint`
 
 exponenciální
@@ -430,6 +443,7 @@ pseudopolynomiální - Špatně, Pseudopolynomiální klasifikace není přímo 
 Dynamické programování je aplikováno na grafový problém. Velikost instance se měří počtem uzlů. Podinstance je charakterizována libovolnou podmnožinou uzlů. Kompozice a dekompozice je v konstantním čase. Existuje instance, kde je třeba vypočíst všechny podinstance. Algoritmus je vždy
 
 </strong>
+
 `💛 hint`
 
 nejhůře lineární
@@ -459,6 +473,7 @@ nejhůře polynomiální - Špatně, Vzhledem k charakterizaci podinstancí libo
 Dynamické programování používá jako klíč k výběru z paměti řešení podinstancí dvojici diskrétních proměnných (p, q), kde rozsah hodnot p je dán v instanci, ale nesouvisí s její velikostí N, rozsah q je O(N^2). Složitost kompozice a dekompozice je konstantní. Algoritmus je
 
 </strong>
+
 `💛 hint`
 
 lineární
@@ -492,6 +507,7 @@ polynomiální - Špatně, I když je složitost kompozice a dekompozice konstan
 Dynamické programování používá jako klíč k výběru z paměti řešení podinstancí k-tici binárních proměnných, kde k = logN a N je velikost instance. Postup výpočtu je od triviálních podinstancí k finálnímu řešení, každou hodnotu je třeba vypočíst. Složitost kompozice a dekompozice je konstantní. Algoritmus je
 
 </strong>
+
 `💛 hint`
 
 lineární
@@ -521,6 +537,7 @@ pseudopolynomiální - Špatně, Algoritmus není pseudopolynomiální, protože
 Dynamické programování je aplikováno na problém, kde vstupní proměnné zobrazují graf s uzly očíslovanými 1…n, kde n je velikost instance a dále celé číslo K. Podinstance je tvořena prvními m - 1 hranami, kde m je počet hran právě dekomponované instance, každá podinstance může mít jiné K, nejvýše rovné log K právě dekomponované instance. Kompozice a dekompozice mají složitost Θ(log M). Existují instance, kde je třeba vyřešit všechny podinstance. Algoritmus
 
 </strong>
+
 `💛 hint`
 
 má lineární horní asymptotickou mez složitosti
@@ -550,6 +567,7 @@ je pseudopolynomiální - Špatně, Zadání neposkytuje dostatek informací k u
 Dynamické programování používá klíč k výběru z paměti řešení N-tici binárních čísel proměnných, kde N je velikost instance. Postup výpočtu je od triviálních podinstancí k finálnímu řešení, každou hodnotu je třeba vypočíst. Algoritmus je
 
 </strong>
+
 `💛 hint`
 
 Lineární
@@ -579,6 +597,7 @@ Lokální metoda - Špatně, dynamické programování je globální metoda, pro
 Dynamické programování používá jako klíč k výběru z paměti řešení podinstancí dvojici proměnných v rozsahu 0..n, kde n je velikost instance. Postup výpočtu je od triviálních podinstancí k finálnímu řešení, každou hodnotu je třeba vypočíst. Algoritmus je
 
 </strong>
+
 `💛 hint`
 
 exponenciální
@@ -612,6 +631,7 @@ kubický - Špatně, Bez specifických důkazů pro kubickou složitost.
 Dynamické programování je aplikováno na problém, kde vstupní proměnné zobrazují graf s uzly očíslovanými 1…n, kde n je velikost instance a dále celé číslo K. Podinstance je tvořena prvními K hranami, každá podinstance může mít jiné K. Kompozice a dekompozice mají konstantní složitost. Algoritmus
 
 </strong>
+
 `💛 hint`
 
 je pseudopolynomiální
@@ -641,6 +661,7 @@ má složitost nejméně exponenciální ve velikosti instance - Špatně, Konst
 Dynamické programování je aplikováno na permutační problém, instance je množina velikosti n. Dekompozice má složitost Θ (n^2), kde n je velikost původně zadané instance. Podinstance je charakterizována libovolnou podmnožinou původní množiny. Existují instance, na kterých je nutno vypočíst všechny podinstance Algoritmus
 
 </strong>
+
 `💛 hint`
 
 má exponenciální dolní asymptotickou mez složitosti
@@ -670,6 +691,7 @@ polynomiální - Špatně, Exponenciální povaha výpočtu vylučuje polynomiá
 Dynamické programování je aplikováno na permutační problém, instance je množina velikosti n. Dekompozice má složitost Θ(n), kde n je velikost původně zadané instance. Podinstance je charakterizována libovolnou podmnožinou původní množiny. Existují instance, na kterých je nutno vypočíst všechny podinstance. Algoritmus
 
 </strong>
+
 `💛 hint`
 
 je nejvýše polynomiální
@@ -699,6 +721,7 @@ je polynomiální ve velikosti instance - Špatně, Exponenciální povaha výpo
 Dynamické programování vybírá optimální podmnožinu množiny, jejíž velikost je velikostí instance. Podinstance je charakterizována libovolnou podmnožinou v instanci. Postup výpočtu je od triviálních podinstancí k finálnímu řešení. Každou hodnotu je třeba vypočíst. Horní asymptotická mez složitosti je
 
 </strong>
+
 `💛 hint`
 
 exponenciální
@@ -728,6 +751,7 @@ polynomiální - Špatně, Exponenciální povaha problému vylučuje polynomiá
 Dynamické programování je aplikováno na grafový problém. Podinstance je charakterizována podmnožinou uzlů (libovolnou). Existují instance, na kterých je nutno všechny podinstance vypočíst. Velikost instance se měří počtem uzlů. Algoritmus je
 
 </strong>
+
 `💛 hint`
 
 globální metoda
@@ -757,6 +781,7 @@ polynomiální - Špatně, Exponenciální povaha problému vylučuje polynomiá
 Dynamické programování je aplikováno na grafový problém. Velikost instance se měří počtem uzlů. Podinstance je charakterizována podmnožinou uzlů (libovolnou). Kompozice je v konstantním čase. Postup výpočtu je od triviálních podinstancí k finálnímu řešení, každou hodnotu je třeba vypočíst. Horní asymptotická mez složitosti algoritmu je
 
 </strong>
+
 `💛 hint`
 
 lineární
@@ -790,6 +815,7 @@ polynomiální - Špatně, Vzhledem k exponenciálnímu počtu podmnožin uzlů 
 Evoluční programování pracuje nad
 
 </strong>
+
 `💛 hint`
 
 stromovou reprezentací programu
@@ -819,6 +845,7 @@ orientovaným acyklickým grafem datových závislostí - Špatně, Tato forma r
 Evoluční strategie pracuje nad reprezentací
 
 </strong>
+
 `💛 hint`
 
 vektoru reálných čísel a odchylek
@@ -848,6 +875,7 @@ automatu - Špatně, Reprezentace automatu není charakteristická pro evolučn�
 Podle teorie stavebních bloků
 
 </strong>
+
 `💛 hint`
 
 složitější schémata (vyššího řádu) přežívají lépe
@@ -881,6 +909,7 @@ složitější schémata (vyššího řádu) přežívají lépe - Špatně, Teo
 V genetickém algoritmu je třeba zpomalit konvergenci. Možností je upravit pravděpodobnost mutace a nebo upravit selekční tlak. Platí
 
 </strong>
+
 `💛 hint`
 
 přednostně snížíme selekční tlak
@@ -906,6 +935,7 @@ přednostně zvýšíme pravděpodobnost mutace - Špatně, Zvýšení pravděpo
 V genetickém algoritmu je třeba zpomalit konvergenci. Pravděpodobně bude účinné
 
 </strong>
+
 `💛 hint`
 
 upravit koeficienty lineárního škálování, pokud je použito
@@ -931,6 +961,7 @@ zvětšit velikost turnaje, pokud je použit - Špatně, Zvětšení velikosti t
 V genetickém algoritmu je třeba urychlit konvergenci. Možností je upravit pravděpodobnost mutace nebo selekci. Platí
 
 </strong>
+
 `💛 hint`
 
 změna selekčního mechanismu nemá významný vliv, pokud zachováme selekční tlak
@@ -956,6 +987,7 @@ přednostně zvýšíme pravděpodobnost mutace - Špatně, Zvýšení pravděpo
 Genetický algoritmus dobře konverguje až do určité vzdálenosti od předpokládaného globálního minima, pak začne divergovat. Příčina může být
 
 </strong>
+
 `💛 hint`
 
 povaha stavového prostoru („landscape“) se v okolí globálního minima prudce změní
@@ -981,6 +1013,7 @@ pracuje s příliš malou pravděpodobností mutace - Špatně, Příliš malá 
 Algoritmus, který má za běhu upravovat selekční tlak v genetickém algoritmu s lineárním škálováním, bude přímo nastavovat
 
 </strong>
+
 `💛 hint`
 
 pravděpodobnost mutace
@@ -1006,6 +1039,7 @@ pravděpodobnost výběru nejlepšího jedince - Špatně, Pravděpodobnost výb
 Algoritmus, který má za běhu upravovat selekční tlak v genetickém algoritmu, může být založen na zjištění
 
 </strong>
+
 `💛 hint`
 
 diverzity jedinců
@@ -1029,6 +1063,7 @@ poměru zdatnosti např. nejzdatnějšího jedince a jedince v polovině pořad�
 Algoritmus, který má za běhu upravovat selekční tlak v genetickém algoritmu používajícím lineární škálování a ruletový výběr, bude přímo nastavovat
 
 </strong>
+
 `💛 hint`
 
 pravděpodobnost mutace
@@ -1054,6 +1089,7 @@ výseče rulety - Špatně, Výseče rulety jsou určeny zdatností jedinců, kt
 Algoritmus, který má za běhu upravovat selekční tlak v genetickém algoritmu s výběrem ruletou, může přímo nastavovat
 
 </strong>
+
 `💛 hint`
 
 konstantní převod ranku (pořadí zdatnosti) na pravděpodobnost výběru
@@ -1079,6 +1115,7 @@ pravděpodobnost aplikace operátoru „cut and splice“ - Špatně, Toto se t�
 Máte vyhodnotit, zda algoritmus, který automaticky udržuje selekční tlak v genetickém algoritmu, pracuje uspokojivě. Provedete následující
 
 </strong>
+
 `💛 hint`
 
 Budete měřit četnost mutace v závislosti na poměrné zdatnosti.
@@ -1108,6 +1145,7 @@ Zvolíte jednu velikost instance a použijete instance rozdílné obtížnosti. 
 Selekční tlak ve standardním genetickém algoritmu lze řídit
 
 </strong>
+
 `💛 hint`
 
 zhruba ve stejném rozsahu při selekci turnajem i ruletou
@@ -1133,6 +1171,7 @@ ve větším rozsahu při výběru univerzálním stochastickým vzorkováním -
 Volba selekčního tlaku v genetických algoritmech
 
 </strong>
+
 `💛 hint`
 
 je omezena hrozbou divergence při malém selekčním tlaku
@@ -1156,6 +1195,7 @@ může vyžadovat odpovídající nastavení pravděpodobnosti funkce - Správn�
 Genetické operátory Fast Messy GA algoritmu pracují nad
 
 </strong>
+
 `💛 hint`
 
 reprezentací individua
@@ -1185,6 +1225,7 @@ zdatností individua - Špatně, Zdatnost individua je výsledkem procesu, ale n
 Genetické operátory Fast Messy GA algoritmu pracují s
 
 </strong>
+
 `💛 hint`
 
 reprezentací individua
@@ -1214,6 +1255,7 @@ zdatností individua - Špatně, Zdatnost je spíše výsledkem než předmětem
 Základní metodou vyhodnocení, se kterou pracuje Fast Messy genetický algoritmus, je
 
 </strong>
+
 `💛 hint`
 
 stanovení fenotypu přímo z hodnot genů daného jedince a následný výpočet zdatnosti
@@ -1243,6 +1285,7 @@ založena na průměrné délce fragmentu v dané generaci - Špatně, To není 
 Genetický algoritmus s pravděpodobností mutace 40% připomíná
 
 </strong>
+
 `💛 hint`
 
 metodu pouze nejlepší
@@ -1268,6 +1311,7 @@ zaujatou náhodou procházku - Špatně, I když je pravděpodobnost mutace vyso
 Stavební bloky ve Fast Messy GA se generují
 
 </strong>
+
 `💛 hint`
 
 jako podmnožiny ohodnocených genů zadané délky
@@ -1297,6 +1341,7 @@ jako podmnožiny genů zadaného referenčního individua - Špatně, Stavební 
 Stavební blok ve Fast Messy GA je vždy
 
 </strong>
+
 `💛 hint`
 
 reprezentace individua
@@ -1326,6 +1371,7 @@ podmnožina genů referenčního individua - Špatně, Stavební bloky nejsou om
 Vnější cyklus fmGA postupně zvyšuje
 
 </strong>
+
 `💛 hint`
 
 složitost referenčního individua
@@ -1355,6 +1401,7 @@ selekční tlak - Špatně, Vnější cyklus se zaměřuje na velikost fragment�
 Referenční jedinec v fmGA
 
 </strong>
+
 `💛 hint`
 
 slouží pro vyhodnocení zdatnosti
@@ -1384,6 +1431,7 @@ při použití, jeho proměnné nahrazují proměnné fragmentů genetické info
 Ranking v genetickém algoritmu
 
 </strong>
+
 `💛 hint`
 
 nastavuje velikost turnaje
@@ -1413,6 +1461,7 @@ nastavuje velikost turnaje - Špatně, Ranking sám o sobě neurčuje velikost t
 Genetický algoritmus je aplikován v situaci, kdy některé části stavového prostoru mají výrazně větší hloubku než jiné. Využijeme
 
 </strong>
+
 `💛 hint`
 
 konstantní poměrně vysokou míru mutace, aby se populace snáze dostala do “vlídnějších kočin”
@@ -1443,6 +1492,7 @@ konstantní poměrně vysokou míru mutace, aby se populace snáze dostala do �
 Relaxace v iterativních lokálních heuristikách
 
 </strong>
+
 `💛 hint`
 
 nezávisí na vlastnostech konkrétní konfigurace, vyjadřuje pouze fakt, že řešením není
@@ -1480,6 +1530,7 @@ spočívá v použití snadných instancí pro závěrečné vyhodnocení - Špa
 Relaxace v iterativních lokálních heuristikách
 
 </strong>
+
 `💛 hint`
 
 v případě 3-SAT, spočívá ve snížení počtu klauzulí instance
@@ -1511,6 +1562,7 @@ typicky nahrazuje optimalizační kritérium stanovenou konstantní pokutou - Š
 Relaxace v iterativních lokálních heuristikách
 
 </strong>
+
 `💛 hint`
 
 obvykle obsahuje numerický parametr, který je nutno experimentálně nastavit
@@ -1544,6 +1596,7 @@ Slouží pouze při porovnání konfigurací pro přijetí tahu - Špatně, Rela
 Máte experimentálně vyhodnotit, zda chování algoritmu, který automaticky nastavuje počáteční teplotu simulovaného ochlazování, odpovídá teorii, kterou jste vymysleli, a která zahrnuje několik parametrů instance. Zajímá vás také, zda tyto parametry stačí k charakterizaci instance z hlediska práce algoritmu
 
 </strong>
+
 `💛 hint`
 
 Použijete reprezentativní mix praktických instancí.
@@ -1573,6 +1626,7 @@ Použijete reprezentativní mix praktických instancí. - Špatně, Pro experime
 Máte experimentálně vyhodnotit, zda algoritmus, který automaticky nastavuje počáteční teplotu simulovaného ochlazování, pracuje uspokojivě
 
 </strong>
+
 `💛 hint`
 
 Zvolíte jeden parametr instancí, o kterých se domníváte, že na počáteční teplotu má vliv, a zkonstruujete zkušební instance.
@@ -1614,6 +1668,7 @@ Použijete větší počet lehkých instancí k urychlení - Špatně, Použití
 Máte experimentálně vyhodnotit, zda Vámi navržené nastavení simulovaného ochlazování má dostatečnou iterativní sílu
 
 </strong>
+
 `💛 hint`
 
 Budete měřit závislost času výpočtu na velikost instance.
@@ -1643,6 +1698,7 @@ Soubor zkušebních instancí můžete omezit na menší instance. - Špatně, P
 Heuristika, která nastavuje parametry simulovaného ochlazování
 
 </strong>
+
 `💛 hint`
 
 vždy bude brát v úvahu rozsah optimalizačního kritéria nebo jej normovat
@@ -1666,6 +1722,7 @@ efekt, dosažený manipulací s hloubkou ekvilibria, se dá dosáhnout manipulac
 Volba počáteční teploty v simulovaném ochlazování
 
 </strong>
+
 `💛 hint`
 
 pro dosažení nejlepšího výsledku, může vyžadovat odpovídající volbu koeficientu ochlazování
@@ -1689,6 +1746,7 @@ závisí na rozsahu optimalizačního kritéria dané instance - Správně, Rozs
 Koncová teplota v simulovaném ochlazování
 
 </strong>
+
 `💛 hint`
 
 je-li dost nízká, určuje, jak velká část stavového prostoru bude prohledávána
@@ -1714,6 +1772,7 @@ vždy musí zůstat konstantní, pokud se mění počáteční teplota - Špatn�
 Máte udělat závěrečné experimentální vyhodnocení, zda algoritmus, který automaticky nastavuje počáteční teplotu simulovaného ochlazování, pracuje uspokojivě pro praktické nasazení
 
 </strong>
+
 `💛 hint`
 
 Použijete vygenerované instance stejné velikosti.
@@ -1747,6 +1806,7 @@ Použijete praktické instance stejné velikosti. - Špatně, Stejný důvod jak
 Potřebujete plánovací algoritmus, který chcete nasadit do aplikace řízení údržby. Omezení času výpočtu existuje, ale není podstatné (počítá se přes noc na příští den). Důležitá je kvalita (naježděné kilometry). Máte dva kandidáty, A a B, oba randomizované algoritmy. Potřebujete je experimentálně srovnat
 
 </strong>
+
 `💛 hint`
 
 Použijete přednostně instance „nachytané“ při předchozím manuálním řízení.
@@ -1776,6 +1836,7 @@ Pro každou instanci srovnáte dosažené optimalizační kritérium jedním bě
 Potřebujete plánovací algoritmus, který chcete nasadit do aplikace řízení údržby. Čas výpočtu je omezený – přes noc. Rozhodující je kvalita (naježděné kilometry). Máte dva kandidáty, A a B, oba randomizované algoritmy. Potřebujete je experimentálně srovnat
 
 </strong>
+
 `💛 hint`
 
 Pro každou instanci srovnáte průměrnou hodnotu opt. kritéria pro několik desítek až set spuštění.
@@ -1805,6 +1866,7 @@ Použijete náhodně generované instance - Špatně, Lepší je použít prakti
 Potřebujete plánovací algoritmus, který chcete nasadit do aplikace řízení údržby. Čas je shora omezen, úspora pod tuto mez není zajímavá. Máte dva kandidáty, A a B, oba randomizované algoritmy. Potřebujete experimentálně srovnat jejich kvalitu
 
 </strong>
+
 `💛 hint`
 
 Použijete přednostně instance „nachytané“ při předchozím manuálním řízení.
@@ -1834,6 +1896,7 @@ Pro každou instanci srovnáte optimalizační kritérium, dosažené jedním b�
 Máte experimentálně vyhodnotit, zda doba běhu Las Vegas randomizovaného algoritmu roste nejvýše s kvadrátem velikosti instance. Chcete o tom napsat teoretický článek
 
 </strong>
+
 `💛 hint`
 
 Použijete instance „nachytané“ z praxe.
@@ -1863,6 +1926,7 @@ Použijete instance jedné velikosti. - Špatně, Pro analýzu závislosti doby 
 Máte experimentálně vyhodnotit, zda relativní kvalita Monte Carlo randomizovaného algoritmu neklesá s rostoucí velikostí instance
 
 </strong>
+
 `💛 hint`
 
 Použijete instance „nachytané“ z praxe.
@@ -1892,6 +1956,7 @@ Výpočet spustíte jednou pro každou instanci. - Špatně, U randomizovaných 
 Máte experimentálně vyhodnotit, zda randomizovaný algoritmus, který vyvíjíte, je citlivý na určitou charakteristickou instanci
 
 </strong>
+
 `💛 hint`
 
 Použijete přednostně instance „nachytané“ při provozu podobného algoritmu v praxi, i když zkoumanou charakteristiku u nich nelze zjistit.
@@ -1921,6 +1986,7 @@ Použijete přednostně instance „nachytané“ při provozu podobného algori
 Máte experimentálně vyhodnotit, zda randomizovaný plánovací algoritmus, který chcete nasadit do aplikace řízení údržby, pracuje pro toto nasazení uspokojivě. Obtížnost instancí řešených v ostrém nasazení je obtížné odhadnout na základě známých charakteristik
 
 </strong>
+
 `💛 hint`
 
 Použijete přednostně instance „nachytané“ při předchozím manuálním řízení.
@@ -1950,6 +2016,7 @@ Použijete větší počet lehkých instancí k urychlení. - Špatně, Lehké i
 Srovnáváte dva deterministické algoritmy A a B, za účelem teoretického poznání závislosti počtu kroků na velikosti instance. Pro algoritmus B, různé instance jedné velikosti vykazují velký rozptyl v počtu kroků
 
 </strong>
+
 `💛 hint`
 
 Počet kroků pro algoritmus B zprůměrujete, protože rozptyl není součástí hodnocení.
@@ -1979,6 +2046,7 @@ Počet kroků pro algoritmus B zprůměrujete, protože rozptyl není součást�
 Zjišťujete vliv parametru randomizované lokální iterativní heuristiky na kvalitu výsledku. Chcete ukázat, že daný parametr na kvalitu výsledku vliv nemá
 
 </strong>
+
 `💛 hint`
 
 stačí jeden běh pro každou hodnotu parametru
@@ -2008,6 +2076,7 @@ stačí jeden běh pro každou hodnotu parametru - Špatně, Jeden běh není do
 Zjišťujete vliv parametru randomizované lokální iterativní heuristiky na kvalitu výsledku. Provedli jste jeden běh algoritmu na více instancích pro každou hodnotu parametru. Výsledná závislost je zcela chaotická, přestože by k tomu tak být nemělo
 
 </strong>
+
 `💛 hint`
 
 Je to důkaz, že kvalita na parametru nezávisí.
@@ -2041,6 +2110,7 @@ Je to důkaz, že kvalita na parametru nezávisí. - Špatně, Chaotické výsle
 Globální metoda je aplikována na grafový problém. Instance je graf, velikost instance n se měří počtem uzlů grafu. Dekompozice produkuje v čase O(n) dvě podinstance, které obsahují vždy poloviční počet uzlů (nevíme které uzly) a hrany mezi nimi. Kompozice a řešení triviálních instancí je v konstantním čase. Algoritmus
 
 </strong>
+
 `💛 hint`
 
 dá nutně optimální řešení
@@ -2082,6 +2152,7 @@ je pseudopolynomiální - Špatně, Informace poskytnuté nedovolují určit, zd
 Globální optimalizační metoda dekomponuje každou instanci velikosti n na dvě instance velikosti n−1. Pokud existují optimální řešení dekomponovaných instancí, kompozicí dostaneme optimální řešení původní instance. Pokud některá z nich neexistuje, víme, že ani původní instance nemá řešení. Kompozice a dekompozice mají konstantní složitost
 
 </strong>
+
 `💛 hint`
 
 tento algoritmus je dynamickým programováním
@@ -2111,6 +2182,7 @@ tento algoritmus má polynomiální složitost - Špatně, Popisovaná metoda m�
 Globální metoda je aplikována na grafový problém. Instance je tvořena grafem a jedním celým číslem M. velikost instance n se měří jemnou mírou (počet bitů popisu instance). Dekompozice produkuje v čase O(n log M) dvě podinstance, které obsahují vždy poloviční počet uzlů (nevíme které uzly) a hrany mezi nimi. Kompozice a řešení triviálních instancí je také v konstantním čase. Platí
 
 </strong>
+
 `💛 hint`
 
 čas jedné dekompozice je polynomiální ve velikosti instance měřené uvedeným způsobem
@@ -2144,6 +2216,7 @@ při řešení dynamickým programováním je pseudopolynomiální - Špatně, D
 Jak se pozná, že heuristika neskončí v lokálním minimu?
 
 </strong>
+
 `💛 hint`
 
 po restartech skončí vždy ve stejném řešení
@@ -2165,6 +2238,7 @@ po více náhodných restartech skončí jinde - Špatně, Pokud heuristika kon�
 Pokud je počáteční teplota u SA (simulované ochlazování) malá, algoritmus má tendenci padat do lokálního minima
 
 </strong>
+
 `💛 hint`
 
 ano
@@ -2186,6 +2260,7 @@ ne - Špatně
 Vede snížení velikosti turnaje ke zvýšení intenzifikace?
 
 </strong>
+
 `💛 hint`
 
 ano
@@ -2207,6 +2282,7 @@ ano - Špatně, Snížení velikosti turnaje ve skutečnosti snižuje selekční
 S lineárně rostoucím k roste k-okolí:
 
 </strong>
+
 `💛 hint`
 
 lineárně
@@ -2232,6 +2308,7 @@ kvadraticky - Špatně, Růst k-okolí není obecně kvadratický.
 Globální metody
 
 </strong>
+
 `💛 hint`
 
 vždy dávají exaktní výsledek
@@ -2265,6 +2342,7 @@ přibližná dekompozice dává exaktní výsledek - Špatně, Přibližná deko
 Zvýšení selekčního tlaku může způsobit
 
 </strong>
+
 `💛 hint`
 
 degeneraci
@@ -2294,6 +2372,7 @@ divergenci - Špatně, Zvýšení selekčního tlaku spíše snižuje diverzitu,
 Zvýšení mutace může způsobit
 
 </strong>
+
 `💛 hint`
 
 degeneraci
@@ -2323,6 +2402,7 @@ ztrátu diverzity - Špatně, Mutace obvykle zvyšuje genetickou diverzitu v pop
 Snížením selekčního tlaku u genetického algoritmu se zvyšuje diverzifikace
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2344,6 +2424,7 @@ Ne - Špatně, Snížení selekčního tlaku skutečně podporuje diverzifikaci.
 Mutace snižuje diverzifikaci
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2365,6 +2446,7 @@ Ano - Špatně, Mutace zvyšuje genetickou variabilitu a tedy diverzifikaci.
 Globální metody
 
 </strong>
+
 `💛 hint`
 
 používají celý stavový prostor
@@ -2398,6 +2480,7 @@ některé globální metody řeší některé NP-těžké problémy v polynomiá
 Jak se pozná, že heuristika padá do lokálního extrému?
 
 </strong>
+
 `💛 hint`
 
 po každém restartu skončí stejně
@@ -2419,6 +2502,7 @@ po každém restartu skončí stejně - Špatně, Toto nemusí nutně indikovat 
 Když zvýšíme selekční tlak, zvýší se intenzifikace?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2440,6 +2524,7 @@ Ne - Špatně
 Když zvýšíme počáteční teplotu, skončí algoritmus rychle v lokálním extrému?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2461,6 +2546,7 @@ Ano - Špatně, Vysoká počáteční teplota v simulovaném ochlazování umož
 Pokud zvýšíme selekční tlak, zvýší se diverzifikace?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2482,6 +2568,7 @@ Ano - Špatně, Zvýšení selekčního tlaku obvykle snižuje diverzifikaci, pr
 Zvyšuje se mutací intenzifikace?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2503,6 +2590,7 @@ Ano - Špatně, Mutace obvykle zvyšuje diverzifikaci tím, že zavádí nové g
 Když je lokální heuristika silně závislá na počátečním řešení, pomůže zvětšit nebo zmenšit okolí?
 
 </strong>
+
 `💛 hint`
 
 Zvětšit
@@ -2524,6 +2612,7 @@ Zmenšit - Špatně
 Jaká strategie se používá pro výběr souseda u simulovaného ochlazování?
 
 </strong>
+
 `💛 hint`
 
 pouze nejlepší
@@ -2553,6 +2642,7 @@ nejlepší nejdříve - Špatně
 Pokud je u SA nízká hodnota (délka) equilibria a neupdatuje se dynamicky, skončí heuristika rychle v lokálním minimu?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2574,6 +2664,7 @@ Ne - Špatně
 Kdy lokální heuristika NEMÁ tendenci padat do lokálního minima:
 
 </strong>
+
 `💛 hint`
 
 z náhodného řešení skončí vždy jinde
@@ -2595,6 +2686,7 @@ z náhodného řešení skončí vždy jinde - Špatně, Toto nenaznačuje, že 
 Pokud je počáteční teplota u SA malá, má algoritmus tendenci padat do lokálního minima?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2616,6 +2708,7 @@ Ne - Špatně
 Lineární programování
 
 </strong>
+
 `💛 hint`
 
 je metoda
@@ -2645,6 +2738,7 @@ je metoda - Špatně, Lineární programování je matematická technika použí
 Zvětší se zvětšením populace diverzita?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2666,6 +2760,7 @@ Ne - Špatně
 Zvětší se zvětšením mutace diverzita?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2687,6 +2782,7 @@ Ne - Špatně
 Zvýší snížení selekčního tlaku diverzitu?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2708,6 +2804,7 @@ Ne - Špatně
 Dynamické programování
 
 </strong>
+
 `💛 hint`
 
 dává suboptimální výsledek
@@ -2737,6 +2834,7 @@ pro všechny problémy (NP nějaké) zaručuje řešení v polynomiálním čase
 Jak se pozná, že má lokální heuristika dostatečnou iterativní sílu?
 
 </strong>
+
 `💛 hint`
 
 po restartech skončí vždy ve stejném řešení
@@ -2758,6 +2856,7 @@ po více náhodných restartech skončí jinde - Špatně
 Pokud je vysoká teplota tuhnutí u SA, skončíme často v lokálním minimu?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2779,6 +2878,7 @@ Ano - Špatně, Vysoká teplota tuhnutí u simulovaného žíhání (SA) umožň
 GA, vybíráme turnajem. Když turnaj zmenšíme, zvýší se intenzifikace?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2800,6 +2900,7 @@ Ano - Špatně, Zmenšením velikosti turnaje se obvykle snižuje intenzifikace 
 Podporuje velký selekční tlak diverzifikaci?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2821,6 +2922,7 @@ Ano - Špatně, Velký selekční tlak obvykle snižuje diverzitu, protože pref
 Metoda nejlepší nejdříve
 
 </strong>
+
 `💛 hint`
 
 poskytuje exaktní řešení
@@ -2850,6 +2952,7 @@ zaručuje polynomiální složitost - Špatně, Tato metoda nemusí vždy zaruč
 Zvýšení počtu iterací při konstantní teplotě u SA (equilibrium), odpovídá
 
 </strong>
+
 `💛 hint`
 
 zvýšení koeficientu ochlazování
@@ -2875,6 +2978,7 @@ snížení koeficientu ochlazování - Špatně, Snížení koeficientu ochlazov
 Zvýší se snížením velikosti turnaje selekční tlak?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2896,6 +3000,7 @@ Ano - Špatně, Snížení velikosti turnaje naopak snižuje selekční tlak, pr
 Pokud je koeficient ochlazování u SA velmi nízký, skončí heuristika rychle v lokálním minimu?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2917,6 +3022,7 @@ Ne - Špatně
 Zvyšuje mutace diverzifikaci?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -2938,6 +3044,7 @@ Ne - Špatně
 Dynamické programování
 
 </strong>
+
 `💛 hint`
 
 je exaktní
@@ -2967,6 +3074,7 @@ je aproximativní - Špatně, Jako exaktní metoda poskytuje přesná řešení.
 Dynamické programování
 
 </strong>
+
 `💛 hint`
 
 je lokální metoda
@@ -2996,6 +3104,7 @@ dává suboptimální řešení - Špatně, Dynamické programování poskytuje 
 Je u SA při rychlejším ochlazování vyšší pravděpodobnost, že skončíme v lokálním minimu?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -3017,6 +3126,7 @@ Ne - Špatně
 Hladové algoritmy
 
 </strong>
+
 `💛 hint`
 
 dávají exaktní řešení
@@ -3046,6 +3156,7 @@ systematicky prohledávají SP - Špatně, Hladové algoritmy neprohledávají s
 Metoda pouze nejlepší (best only)
 
 </strong>
+
 `💛 hint`
 
 poskytuje exaktní řešení
@@ -3073,6 +3184,7 @@ je systematická - Špatně, Metoda "pouze nejlepší" nemusí být systematick�
 Tabu prohledávání používá při transformaci metodu
 
 </strong>
+
 `💛 hint`
 
 pouze nejlepší
@@ -3102,6 +3214,7 @@ nejlepší nejdříve - Špatně
 Metoda nejlepsi nejdříve (best first)
 
 </strong>
+
 `💛 hint`
 
 poskytuje exaktní řešení
@@ -3129,6 +3242,7 @@ je systematická - Správně, Metoda "nejlepší nejdříve" systematicky prozko
 Zavedení lineárního škálování u GA
 
 </strong>
+
 `💛 hint`
 
 Zvýší selekční tlak
@@ -3158,6 +3272,7 @@ Nesouvisi se selekčním tlakem - Špatně
 Pro globální metody platí:
 
 </strong>
+
 `💛 hint`
 
 exaktní řešení najdou vždy
@@ -3191,6 +3306,7 @@ pokud používají čistou dekompozici a řešení nenaleznou, znamená to, že 
 Jak poznám, že moje jednoduchá lokální iterativní metoda funguje dobře:
 
 </strong>
+
 `💛 hint`
 
 po náhodných restartech vždy skončí ve stejném stavu
@@ -3210,6 +3326,7 @@ po náhodných restartech skončí vždy v počátku - Špatně
 Velikost k-okolí při zvyšování k roste
 
 </strong>
+
 `💛 hint`
 
 nejvýše lineárně
@@ -3235,6 +3352,7 @@ nejvýše kvadraticky - Špatně
 Zvětšení turnaje zvyšuje intenzifikaci?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -3256,6 +3374,7 @@ Ne - Špatně
 Velká koncová teplota způsobí uváznutí v lokálním minimu?
 
 </strong>
+
 `💛 hint`
 
 Ano
@@ -3277,6 +3396,7 @@ Ano - Špatně, Velká koncová teplota v simulovaném ochlazování by mohla v�
 Metoda první zlepšení má tyto vlastnosti
 
 </strong>
+
 `💛 hint`
 
 poskytuje exaktní řešení
@@ -3304,6 +3424,7 @@ je systematická - Špatně, Metoda není systematická v tom smyslu, že system
 Metoda Kernighan - Lin má následující vlastnosti
 
 </strong>
+
 `💛 hint`
 
 je založena na konstrukci proměnného okolí
@@ -3333,6 +3454,7 @@ poskytuje kvalitnější výsledky než metoda nejlepší nejdříve - Špatně,
 Metoda prohledávání okolí v tabu prohledávání je
 
 </strong>
+
 `💛 hint`
 
 prvé zlepšení nebo akceptovatelné zhoršení
@@ -3354,6 +3476,7 @@ prvé zlepšení nebo akceptovatelné zhoršení - Špatně, Tabu prohledáván�
 Změna parametrů lineárního škálování, která má za následek zvětšení poměru zdatnosti nejlepšího a nejhoršího jedince v genetických algoritmech způsobí diverzifikaci
 
 </strong>
+
 `💛 hint`
 
 ano
@@ -3375,6 +3498,7 @@ ano - Špatně, Zvětšení tohoto poměru obvykle způsobí intenzifikaci tím,
 Máte dynamické programování pro problém. Je závislé na podmnožině podproblémů (a nelze to udělat jinak). Jaký je to algoritmus?
 
 </strong>
+
 `💛 hint`
 
 Exponenciální
@@ -3404,6 +3528,7 @@ Polynomiální - Špatně, Dynamické programování může být polynomiální 
 Máme problém zakódovaný binárním vektorem. Definujeme určitou hranici na vzdálenost operace (Hammingova vzdálenost = počet bitů, které se oproti současnému stavu změní). Všechny stavy, které jsou pod hranicí, označíme jako tabu v tabu prohledávání. Toto je:
 
 </strong>
+
 `💛 hint`
 
 Diverzifikace
@@ -3429,6 +3554,7 @@ Intenzifikace - Špatně, Toto nastavení spíše brání intenzifikaci tím, ž
 Máte genetický algoritmus a svou teorii ohledně vlastností instance, jak ji ověříte?
 
 </strong>
+
 `💛 hint`
 
 Vygeneruji instance s danou vlastností a nad nimi spustím genetický algoritmus
@@ -3454,6 +3580,7 @@ Vygeneruji instance s danou vlastností a nad nimi spustím genetický algoritmu
 Co má na vstupu evoluční programování?
 
 </strong>
+
 `💛 hint`
 
 Automat
@@ -3483,6 +3610,7 @@ Rozkladový strom výrazu - Špatně, Rozkladové stromy výrazů jsou běžněj
 Máte dynamické programování pro řešení grafového problému. Do předchozí instance se ptáte s klíčem (p, q) kde p je index uzlu a q je index hrany. Velikost instance se měří počtem uzlů.
 
 </strong>
+
 `💛 hint`
 
 Složitost roste třetí mocninou velikosti instance
@@ -3512,6 +3640,7 @@ Je to pseudopolynomiální - Špatně, Pseudopolynomiální složitost se vztahu
 Selekční tlak v turnajovém výběru PŘÍMO nastavuje
 
 </strong>
+
 `💛 hint`
 
 velikost turnaje
@@ -3533,6 +3662,7 @@ pravděpodobnost výběru nejlepšího jedince - Špatně, Pravděpodobnost výb
 Máte simulované ochlazování s automatickým nastavováním počáteční teploty. Jak ověříte správnost nastavování počáteční teploty?
 
 </strong>
+
 `💛 hint`
 
 Pustím na instance různých velikostí
@@ -3562,6 +3692,7 @@ Pustim na mnoho malych instanci, abych to urychlil - Špatně, Testování pouze
 GA lineárně škálovatelný s ruletovým výběrem může přímo ovlivňovat selekční tlak
 
 </strong>
+
 `💛 hint`
 
 pravděpodobnosti mutace
@@ -3587,6 +3718,7 @@ vyseče rulety - Špatně, Vyseče rulety jsou určeny zdatností, která je ovl
 Trvalá paměť se u Tabu algoritmu může použít k
 
 </strong>
+
 `💛 hint`
 
 diverzifikaci
@@ -3610,6 +3742,7 @@ omezení prohledávaného okolí tabu - Správně, Může být použita k omezen
 Dynamický algoritmus, který jako klíče používá velikost instance a výpočet provádí na základě výsledku nižší instance a počítá od nejmenších instancí je
 
 </strong>
+
 `💛 hint`
 
 polynomiální
@@ -3639,6 +3772,7 @@ s lokální metodou - Špatně, Lokální metoda se v tomto kontextu nevztahuje 
 Typická úloha toho, že tah je tabu v tabu prohledávání je
 
 </strong>
+
 `💛 hint`
 
 diverzifikace
@@ -3664,6 +3798,7 @@ intenzifikace - Špatně, Intenzifikace se soustředí spíše na zkoumání obl
 Genetické programování pracuje nad reprezentací
 
 </strong>
+
 `💛 hint`
 
 vektoru reálných čísel
@@ -3693,6 +3828,7 @@ automatu - Špatně, Automaty nejsou typickou reprezentací v genetickém progra
 Atributy z dlouhodobé paměti v TABU mohou být použité k
 
 </strong>
+
 `💛 hint`
 
 diverzifikaci
@@ -3716,6 +3852,7 @@ omezení okolí - Správně, Pomáhá řídit prohledávání tím, že zahrnuje
 Typická úloha aspiračních kritérií je
 
 </strong>
+
 `💛 hint`
 
 diverzifikace
@@ -3741,6 +3878,7 @@ omezení okolí - Špatně, Aspirační kritéria neomezuje okolí, ale umožňu
 Algoritmus, který bude za běhu upravovat selekční tlak v GA, bude zjišťovat
 
 </strong>
+
 `💛 hint`
 
 diverzitu (rozdílnost) jedinců
@@ -3770,6 +3908,7 @@ poměry zdatnosti - Špatně, Konkrétní poměry zdatnosti nejsou přímo spoje
 Základní jednotkou reprezentace, se kterou pracuje stochastická optimalizace, je
 
 </strong>
+
 `💛 hint`
 
 stochastický model závislosti mezi proměnnými
@@ -3799,6 +3938,7 @@ binární řetěz - Špatně, Binární řetězy jsou spíše používány v gen
 Dynamické programování je aplikováno na problém, kde konfigurační proměnné zobrazují graf s uzly očíslovanými 1…n, kde n je velikost instance. Podinstance je tvořena prvními m uzly. Kompozice a dekompozice mají složitost Omega(n). Algoritmus:
 
 </strong>
+
 `💛 hint`
 
 má složitost rostoucí s třetí mocninou velikosti instance
@@ -3832,6 +3972,7 @@ je pseudopolynomiální - Špatně, Není důvod klasifikovat algoritmus jako ps
 Dynamické programování řeší problém, kde každá instance i podinstance je charakterizována počtem prvků n a celočíselným parametrem P. Postup výpočtu je od triviálních podinstancí k finálnímu řešení. Dá se dokázat, že je třeba vyřešit podinstance pro všechna n, ale pro každé n pouze Θ(log(P)) instancí. Kompozice a dekompozice mají konstantní složitost. Algoritmus je:
 
 </strong>
+
 `💛 hint`
 
 nejméně exponenciální
@@ -3861,6 +4002,7 @@ kubický - Špatně, Kubická složitost není odůvodněna.
 V genetickém algoritmu používáme operátor inverze, jestliže:
 
 </strong>
+
 `💛 hint`
 
 chceme potlačit statistickou nevyváženost uniformního křížení
@@ -3886,6 +4028,7 @@ současně používáme uniformní stochastický výběr - Špatně, Tato metoda
 Pro praktickou aplikaci kombinatorického optimalizačního problému jste zvolili simulované ochlazování bez adaptačních mechanismů a s pevnou hodnotou koncové teploty. Na většině instancí se optimalizační kritérium nejdříve poněkud zhoršuje a přitom vykazuje náhodné změny, posléze se zlepšuje a náhodné změny se zmenšují. Na převážné části instancí konverguje ke stabilnímu a dobrému řešení. Na zbylých stále zlepšuje opt. kritérium a náhodné změny se zmenšují, ale optimalizační kritérium se nedostane ani ke startovací hodnotě. Na vině je:
 
 </strong>
+
 `💛 hint`
 
 příliš vysoká hodnota počáteční teploty
@@ -3915,6 +4058,7 @@ příliš nízká hodnota koeficientu ochlazování - Špatně, Nízký koeficie
 Instance problému splnění podmínek má n konfiguračních proměnných, doména každé proměnné má právě d hodnot. Algoritmus má stav odvozený pouze z konfiguračních proměnných.
 
 </strong>
+
 `💛 hint`
 
 Stavový prostor má n^d stavů
@@ -3944,6 +4088,7 @@ Prostor prohledávání má d^(2n) stavů - Špatně, Tato formulace nepřesně 
 Dynamické programování je aplikováno na problém, kde konfigurační proměnné zobrazují graf s hranami očíslovanými 1…m, kde m je počet hran instance. Každá hrana je ohodnocena celým číslem 1 … M. Podinstance je tvořena prvními m-1 hranami, každá je vypočítána. Kompozice a dekompozice mají složitost Theta(log(M)). Algoritmus
 
 </strong>
+
 `💛 hint`
 
 je lineární
