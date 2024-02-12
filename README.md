@@ -1,5 +1,7 @@
 # 2023 nové
 
+---
+
 Problém diskrétního rozmístění:
 
 Dáno:
@@ -171,7 +173,11 @@ reprezentaci individua - Špatně, Zdatnost v Fast Messy GA je určena výpočte
 fenotypu individua - Špatně, V Fast Messy GA je důraz kladen na genotypovou reprezentaci a její interakce, ne přímo na fenotyp.
 
 ---
+
 # Bayesovská optimalizace
+
+---
+
 Základní jednotkou reprezentace, se kterou pracuje bayesovská optimalizace je
 
 `💛 hint`
@@ -289,6 +295,8 @@ stochastickým výběrem - Špatně, Modelování v bayesovské optimalizaci se 
 ---
 
 # Dynamické programování
+
+---
 
 Dynamické programování může
 
@@ -752,6 +760,8 @@ polynomiální - Špatně, Vzhledem k exponenciálnímu počtu podmnožin uzlů 
 
 # Simulovaná evoluce
 
+---
+
 Evoluční programování pracuje nad
 
 `💛 hint`
@@ -837,6 +847,8 @@ složitější schémata (vyššího řádu) přežívají lépe - Špatně, Teo
 ---
 
 # Genetický algoritmus
+
+---
 
 V genetickém algoritmu je třeba zpomalit konvergenci. Možností je upravit pravděpodobnost mutace a nebo upravit selekční tlak. Platí
 
@@ -1377,6 +1389,8 @@ konstantní poměrně vysokou míru mutace, aby se populace snáze dostala do �
 
 # Relaxace 
 
+---
+
 Relaxace v iterativních lokálních heuristikách
 
 `💛 hint`
@@ -1472,6 +1486,8 @@ Slouží pouze při porovnání konfigurací pro přijetí tahu - Špatně, Rela
 ---
 
 # Simulované ochlazování
+
+---
 
 Máte experimentálně vyhodnotit, zda chování algoritmu, který automaticky nastavuje počáteční teplotu simulovaného ochlazování, odpovídá teorii, kterou jste vymysleli, a která zahrnuje několik parametrů instance. Zajímá vás také, zda tyto parametry stačí k charakterizaci instance z hlediska práce algoritmu
 
@@ -1666,6 +1682,8 @@ Použijete praktické instance stejné velikosti. - Špatně, Stejný důvod jak
 ---
 
 # Randomizovaný/deterministický algoritmus
+
+---
 
 Potřebujete plánovací algoritmus, který chcete nasadit do aplikace řízení údržby. Omezení času výpočtu existuje, ale není podstatné (počítá se přes noc na příští den). Důležitá je kvalita (naježděné kilometry). Máte dva kandidáty, A a B, oba randomizované algoritmy. Potřebujete je experimentálně srovnat
 
@@ -1949,6 +1967,8 @@ Je to důkaz, že kvalita na parametru nezávisí. - Špatně, Chaotické výsle
 
 # Globální metoda
 
+---
+
 Globální metoda je aplikována na grafový problém. Instance je graf, velikost instance n se měří počtem uzlů grafu. Dekompozice produkuje v čase O(n) dvě podinstance, které obsahují vždy poloviční počet uzlů (nevíme které uzly) a hrany mezi nimi. Kompozice a řešení triviálních instancí je v konstantním čase. Algoritmus
 
 `💛 hint`
@@ -2046,6 +2066,8 @@ při řešení dynamickým programováním je pseudopolynomiální - Špatně, D
 ---
 
 # Ostatní otázky (neoznačená změť, ovšem bez duplicit)
+
+---
 
 Jak se pozná, že heuristika neskončí v lokálním minimu?
 
@@ -3604,6 +3626,8 @@ poměry zdatnosti - Špatně, Konkrétní poměry zdatnosti nejsou přímo spoje
 ---
 
 # FIKI – zkouškové otázky 2013-2015
+
+---
 
 Základní jednotkou reprezentace, se kterou pracuje stochastická optimalizace, je
 
